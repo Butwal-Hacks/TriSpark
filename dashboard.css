@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+
+nav {
+  background: #0B1A4D;
+  height: 110px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  color: #FFD700;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #FFD700;
+}
+
+/* ===== CHAT BUTTON ===== */
+.chat-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 22px;
+
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.4);
+  cursor: pointer;
+}
+
+/* ===== MAIN CONTENT ===== */
+.starting {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.startingkobox {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.servicelist {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+/* submit button */
+.done-btn {
+  width: 100%;
+  padding: 15px;
+
+  background: #f59e0b;
+  color: #0f172a;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.done-btn:hover {
+  background: #fbbf24;
+  transform: translateY(-2px);
+}
+
+/* footer wala section */
+footer {
+  background: linear-gradient(180deg, #0B1A4D, #09133a);
+  color: #e5e7eb;
+
+  margin-top: 90px;
+  padding: 70px 20px 25px;
+}
+
+.footercontent {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 45px;
+}
+
+.footerlogo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 12px;
+}
+
+.footerbox h4 {
+  font-size: 16px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.footerbox h4::after {
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #FFD700;
+
+  display: block;
+  margin-top: 6px;
+  border-radius: 10px;
+}
+
+.footerbox p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.footerbox i {
+  color: #FFD700;
+  margin-right: 8px;
+}
+
+/* social links  rakhni*/
+.social {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.social a {
+  width: 36px;
+  height: 36px;
+
+  background: #1f2a63;
+  color: #ffffff;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+
+
+/* footer bottom text */
+.copy {
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 45px;
+  padding-top: 18px;
+}

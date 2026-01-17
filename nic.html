@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>National Identity Card – Civicसेवा</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --text: #ffffff;
+  --muted: #94a3b8;
+  --accent: #f59e0b;
+  --border: #334155;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 15px; color: var(--accent); }
+.subtitle { color: var(--muted); max-width: 750px; line-height: 1.6; margin-bottom: 40px; font-size: 1.1rem; }
+
+/* Sec. Titles */
+.section { margin-bottom: 50px; }
+.section-title {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent);
+}
+.section-title span {
+  width: 32px; height: 32px;
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: 50%;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* k k chahinxw */
+.req { display: grid; gap: 18px; }
+.req-item {
+  display: flex; gap: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 22px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.req-item:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+.req-icon { font-weight: bold; font-size: 1.3rem; color: var(--accent); }
+.req-item p { color: var(--muted); font-size: 0.95rem; margin-top: 3px; }
+
+/* Kata jani */
+.location-list { display: grid; gap: 20px; }
+.location {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.location:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+.location h4 { margin-bottom: 8px; color: var(--accent); }
+.location p { font-size: 0.95rem; color: var(--muted); }
+.meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+.meta span {
+  font-size: 0.85rem; padding: 6px 10px; border: 1px solid var(--border);
+  border-radius: 999px; background: #1e293b;
+}
+
+/* Online Form Box ko lagi */
+.form-box {
+  background: #1c1f2a;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 20px;
+  color: var(--text);
+}
+.form-box strong { color: var(--accent); }
+
+/* Tip Box ko lagi */
+.tip {
+  background: #152836;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 18px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Token Section ko lagi */
+.token-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 18px;
+  margin-top: 20px;
+  color: var(--text);
+}
+
+/* Button ko lagi */
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  background: var(--accent);
+  color: var(--bg);
+  transition: all 0.2s ease;
+  margin-top: 12px;
+}
+.btn:hover { background: #fbbf24; transform: translateY(-2px); }
+
+/* res*/
+@media (max-width: 768px) {
+  .req, .location-list { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <h1>National Identity Card</h1>
+  <p class="subtitle">
+    National Identity Card (NID) is issued by the District Administration Office. 
+    Applicants must visit in person with original documents.<br><br>
+    (राष्ट्रिय परिचय पत्र जिल्ला प्रशासन कार्यालयबाट प्रदान गरिन्छ)
+  </p>
+
+  <!-- k garni -->
+  <div class="section">
+    <div class="section-title"><span>1</span> What You’ll Need</div>
+
+    <div class="req">
+      <div class="req-item">
+        <div class="req-icon">i.</div>
+        <div>
+          <strong>Citizenship Certificate</strong>
+          <p>Original citizenship and photocopies too</p>
+        </div>
+      </div>
+
+      <div class="req-item">
+        <div class="req-icon">ii.</div>
+        <div>
+          <strong>Parent's Citizenship</strong>
+          <p>Father or Mother citizenship copy</p>
+        </div>
+      </div>
+
+      <div class="req-item">
+        <div class="req-icon">iii.</div>
+        <div>
+          <strong>Online Application</strong>
+          <p>Bring the softcopy of the filled online form</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kata jani -->
+  <div class="section">
+    <div class="section-title"><span>2</span> Where to Go</div>
+
+    <div class="location-list">
+      <div class="location">
+        <h4>District Administration Office (DAO)</h4>
+        <div class="meta">
+         
+          <span> Office opens at 10 AM</span>
+          
+        </div>
+        <a href="https://www.google.com/maps/place/District+Administration+Office" target="_blank" class="btn">View on Map</a>
+      </div>
+
+      <div class="location">
+        <h4>Online form</h4>
+        <a href="https://enrollment.donidcr.gov.np/PreEnrollment/" target="_blank" class="btn">Apply Online</a>
+        <p>Must bring the softcopy of the filled online form  </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- For Form -->
+  <div class="section" id="onlineFormSection">
+    <div class="section-title"><span>3</span> Average time </div>
+   
+    <p>The average time is:- 1-2 Days </p>
+    
+  </div>
+
+  <!-- TOKEN -->
+  <div class="section">
+    <div class="token-box">
+       <strong>Token Required:</strong> Arrive before 9 AM for smooth processing.
+    </div>
+  </div>
+
+  <!-- sallaha-->
+  <div class="section">
+    <div class="tip">
+       <strong>Tip:</strong> Bring original documents and 2 photocopies for faster service.
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>

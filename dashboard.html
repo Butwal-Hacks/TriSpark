@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Service – Civic सेवा</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<nav>
+  <div class="brand">Civic सेवा</div>
+  <ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>
+
+<button class="chat-btn"><i class="fas fa-message"></i></button>
+
+<div class="starting">
+  <div class="startingkobox">
+    <h1>Select Your Service</h1>
+    <p class="info">
+      Choose the service and your permanent district to get accurate guidance
+    </p>
+
+    <div class="field">
+      <label for="service">Service</label>
+      <select id="service">
+        <option value=""> Select Service </option>
+        <option value="citizenship">Citizenship</option>
+        <option value="passport">Passport</option>
+        <option value="license">Driving License</option>
+        <option value="NIC">NID</option>
+        <option value="land">Land registration</option>
+        <option value="Business">Business registraion</option>
+        <option value="voter">Voter Id card</option>
+      </select>
+    </div>
+
+    <div class="servicelist">
+      <label for="district">Permanent Address (District)</label>
+      <select id="district">
+        <option value="">Select District </option>
+        <option>Rupandehi</option>
+        <option>Lalitpur</option>
+        <option>Bhaktapur</option>
+        <option>Kathmandu</option>
+        <option>Pokhara</option>
+        <option>Dang</option>
+        <option>Syangja</option>
+        <option>Palpa</option>
+        <option>Gulmi</option>
+      </select>
+    </div>
+
+    <button class="done-btn" onclick="servicepage()">Done</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footercontent">
+
+    <div class="footerbox">
+      <div class="footerlogo">Civic सेवा</div>
+      <p>
+        A pre-visit civic guide that helps citizens know
+        what documents are required, where to go,
+        and how much time it takes before stepping
+        into a government office.
+      </p>
+    </div>
+
+    <div class="footerbox">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-phone"></i> +977 980-0000000</p>
+      <p><i class="fas fa-envelope"></i> info@civicsewa.org</p>
+      <p><i class="fas fa-location-dot"></i> Butwal, Nepal</p>
+    </div>
+
+    <div class="footerbox">
+      <h4>Follow Us</h4>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="copy">
+    Civic सेवा • Know Before You Go • Made by TriSpark
+  </div>
+</footer>
+<script src="dashboard.js"></script>
+
+</body>
+</html>
